@@ -193,6 +193,39 @@ body {
 
 /*END HOMEPAGE*/
 
+/*MENU CATEGORIES*/
+.category-tile {
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title+div {
+    margin-bottom: 50px;
+}
+
+/*END MENU CATEGORIES*/
+
 /*MEDIA QUERIES*/
 
 /*Large devices only*/
@@ -284,7 +317,7 @@ body {
     }
 
     /*END HEADER*/
-   
+
 
     /*FOOTER*/
     .panel-footer section {
@@ -312,4 +345,32 @@ body {
     #specials-tile {
         width: 360px;
         margin: 0 auto 15px;
+    }
+
+/*Super extra small devices only*/
+@media (max-width: 479px) {
+
+    /*HEADER*/
+        /*Restaurant name*/
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-style: 6vw;
+    }
+
+    /*END HEADER*/
+
+    /*HOMEPAGE*/
+    #menu-tile,
+    #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+
+    .col-xxs-12 { /*Copy the styles of col-xs-12 from Bootstrap*/
+    	position: relative;
+    	min-height: 1px;
+    	padding-right: 15px;
+    	padding-left: 15px;
+    	float: left;
+    	width: 100%;
     }
